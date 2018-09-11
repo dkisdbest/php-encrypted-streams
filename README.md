@@ -30,7 +30,7 @@ $cipherMethod = new Jsq\EncryptionStreams\Cbc(
 );
 $key = ... // a symmetric encryption key 
 // Create a PSR-7 stream for a very large file.
-$plaintext = new GuzzleHttp\Psr7\LazyOpenStream('/path/to/a/massive/file', 'r+);
+$plaintext = new GuzzleHttp\Psr7\LazyOpenStream('/path/to/a/massive/file', 'r+');
 // Create an encrypting stream.
 $ciphertext = new Jsq\EncryptionStreams\AesEncryptingStream(
     $plaintext,
